@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .loader-5 {
+            width: 100px;
+            height: 10px;
+            background: #8f44fd;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .loader-5::before {
+            content: '';
+            width: 30px;
+            height: 100%;
+            background: #ffffff;
+            position: absolute;
+            left: -30px;
+            animation: slide 1s linear infinite;
+        }
+    
+        @keyframes slide {
+            0% {
+                left: -30px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+    
+    <div class="loader-5"></div>
+
+</body>
+</html>
